@@ -3,7 +3,7 @@ const chatWindow = document.getElementById('chat-window');
 const messageInput = document.getElementById('message-input');
 const sendButton = document.getElementById('send-button');
 
-const ws = new WebSocket('ws://localhost:3000');
+const ws = new WebSocket('ws://localhost:8080');
 
 ws.onmessage = event => {
   const message = document.createElement('p');
